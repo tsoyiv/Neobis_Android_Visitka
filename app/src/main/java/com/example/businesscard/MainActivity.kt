@@ -23,5 +23,29 @@ class MainActivity : AppCompatActivity() {
                 startActivity(it)
             }
         }
+        binding.button2.setOnClickListener {
+            Intent(this, ThirdActivity::class.java).also {
+                intent.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT)
+                startActivity(it)
+            }
+        }
+        binding.button5.setOnClickListener {
+            Intent(this, FourthActivity::class.java).also {
+                intent.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT)
+                startActivity(it)
+            }
+        }
+        binding.button6.setOnClickListener {
+            Intent(this, FifthActivity::class.java).also {
+                intent.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT)
+                startActivity(it)
+            }
+        }
+        binding.button8.setOnClickListener {
+            Intent(this, SixthActivity::class.java).also {
+                intent.addFlags(Intent.FLAG_ACTIVITY_REORDER_TO_FRONT)
+                startActivity(it)
+            }
+        }
     }
 }
